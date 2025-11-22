@@ -1,0 +1,25 @@
+# ----------------------------------------------------
+# Zazu Trading Agent - Configuration Parameters (R&D Phase)
+# ----------------------------------------------------
+
+# I. GLOBAL FINANCIAL CONSTRAINTS (Pillars 2 & 4)
+FINANCIAL:
+  TOTAL_ALLOCATION: 100.00         # A_total ($100 initial commitment)
+  MAX_POSITION_RATE: 0.05          # MPS_rate (5%)
+  MAX_DRAWDOWN_RATE: 0.50          # MDD (50% loss threshold for Hard-Halt)
+  BASE_ASSET_SYMBOL: "SOL/USD"
+  
+# II. SEPTENARY GRID ACCUMULATOR (SGA) PARAMETERS
+GRID:
+  VOLATILITY_CAPTURE_BUFFER: 0.04  # Initial 4% of P_ref
+  GRID_SIZE: 7
+  MAX_BUY_ORDERS: 3
+
+# III. BENEVOLENCE DRIFT SCORE (BDS) THRESHOLDS
+BDS:
+  HARD_HALT_THRESHOLD: 75.0
+  SOFT_HALT_THRESHOLD: 85.0
+  
+# IV. LOGGING AND AUDIT SETTINGS
+LOGGING:
+  ROLLING_AUDIT_PERIOD_HOURS: 24
